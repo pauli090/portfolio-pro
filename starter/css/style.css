@@ -1,0 +1,403 @@
+:root {
+    --blue: rgb(145, 191, 226); 
+    --dark-blue: rgb(58, 76, 90);
+    --gray: rgb(53, 53, 53); 
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+    
+header {
+    margin: 0px auto;
+    display: flex;
+    min-height: 70px;
+    background-color: var(--gray);
+    padding: 10px 0px;
+  }
+
+header h1 {
+    width: 25%;
+    color: var(--gray);
+    background-color: var(--blue);
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+nav a {
+    display: inline;
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 18px;
+    text-align: right;
+    border-bottom: 3px solid var(--blue);
+
+}
+
+.hero-banner {
+    background-image: url(../images/02-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 40vh;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    
+}
+
+
+
+.hero-banner h2 {
+    background-color: rgba(110, 207, 255, 0.7);
+    margin: 0px 100px 10px 0px;
+    padding: 15px;
+    color: var(--gray);
+    z-index: 100;
+}
+
+.hero-banner p {
+    display: flex;
+    position: relative;
+    bottom: 27px;
+    left: 617px;
+    vertical-align: super;
+    font-size: 10px;
+    font-style: oblique;
+    color: var(--gray);
+}
+
+.page-wrapper {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "about description"
+    "work projects"
+    "contact links"
+}
+
+.page-section h2 {
+    font-size: 40px;
+    color: var(--dark-blue);
+    max-width: 200px;
+    padding: 20px;
+    text-align: right;
+    border-right: 2px;
+    border-color: black;
+
+}
+
+.page-content {
+    padding: 15px;
+}
+
+.work-content {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "portfolio-a portfolio-a"
+    "portfolio-b portfolio-c"
+    "portfolio-d portfolio-e"
+
+}
+
+.projects {
+    padding: auto;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px var(--dark-blue);
+}
+
+#portfolio-a {
+    grid-area: portfolio-a;
+    background-image: url("../images/02-portfolio-1.jpg");
+    
+  
+  }
+  #portfolio-b {
+    grid-area: portfolio-b;
+    background-image: url("../images/02-portfolio-2.jpg");
+  }
+  
+  #portfolio-c {
+    grid-area: portfolio-c;
+    background-image: url("../images/02-portfolio-3.jpg");
+  }
+  
+  #portfolio-d {
+    grid-area: portfolio-d;
+    background-image: url("../images/02-portfolio-4.jpg");
+  }
+  
+  #portfolio-e {
+    grid-area: portfolio-e;
+    background-image: url("../images/02-run-buddy.jpg");
+  }
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/*   
+  #featuredProduct {
+    grid-area: featuredProduct;
+    background-image: url("../images/furniture1.png");
+  }
+  
+  #secondaryProduct {
+    grid-area: secondaryProduct;
+    background-image: url("../images/furniture2.png");
+  }
+  
+  #CTA {
+    grid-area: CTA;
+    background-image: url("../images/woodbg.png");
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  #headline {
+    background-color: rgba(255,255,255,0.8);
+    border-bottom: 5px solid #FF6200;
+    position: absolute;
+    right: -50px;
+    top: 100px;
+    padding: 25px;
+    max-width: 550px;
+    z-index: 100;
+  }
+  
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  /* Category Grid CSS */
+  
+  /* .subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "bookcases bedroom patio"
+    "couches couches patio"
+    "desks desks desks"
+    ;
+  }
+  
+  #bookcases {
+    grid-area: bookcases;
+    background-image: url("../images/bookcases@2x.png");
+  
+  }
+  #bedroom {
+    grid-area: bedroom;
+    background-image: url("../images/beds@2x.png");
+  }
+  
+  #couches {
+    grid-area: couches;
+    background-image: url("../images/couch@2x.png");
+  }
+  
+  #patio {
+    grid-area: patio;
+    background-image: url("../images/patio@2x.png");
+  }
+  
+  #desks {
+    grid-area: desks;
+    background-image: url("../images/desks@2x.png");
+  }
+  
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  
+  .heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid #FF6200;
+  } */
+  
+  
+  /* Navigation CSS */
+  /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+ /* 
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #navBar h1 {
+    width: 25%;
+    font-weight: 500;
+  }
+  #navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+  }
+  .icons img {
+    margin: 15px;
+    cursor: pointer;
+  }
+  .highlight {
+    color: #FF6200;
+    font-weight: 700;
+  }
+  
+  
+  h2 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #FF6200;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
+  }
+  
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  
+  #headline p {
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color: #636364;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    #heroGrid {
+      grid-template-areas:
+      "featuredProduct featuredProduct"
+      "secondaryProduct CTA";
+    }
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "bookcases"
+        "bedroom"
+        "patio"
+        "couches"
+        "desks"
+      ;
+    }
+  }
+   */
+
+   @media only screen and (max-width: 800px) {
+
+    .hero-banner p {
+        left: 300px;
+    }
+
+   .page-section h2 {
+    font-size: 35px;
+   }
+   
+}
+   
+   @media only screen and (max-width: 700px) {
+    
+    header h1 {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+            }
+    
+    nav a {
+        font-size: 15px;
+        margin: 8px;
+    }
+
+    .page-section h2 {
+        font-size: 30px;
+
+   }
+   }
+
+   @media only screen and (max-width: 600px) {
+    header h1 {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        
+    }
+
+    .page-section h2 {
+        font-size: 23px;
+
+}
+   }
