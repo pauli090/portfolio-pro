@@ -3,7 +3,7 @@
 
 ## Description
 
-Professional porfolio sample webside made to meet accessibilty criteria for bootcamp challenge.
+Professional portfolio sample webside made to meet accessibilty criteria for bootcamp challenge.
 The project was created to show usage of display flex and display flex. Thanks to media queries webside is responsive and looks good on every device.
 
 

@@ -1,3 +1,5 @@
+
+
 :root {
     --blue: rgb(145, 191, 226); 
     --dark-blue: rgb(58, 76, 90);
@@ -7,7 +9,8 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif
   }
-    
+  /* main logo and navigation bar properties */
+  
 header {
     margin: 0px auto;
     display: flex;
@@ -46,6 +49,7 @@ nav a {
     border-bottom: 3px solid var(--blue);
 
 }
+  /* hero banner image*/
 
 .hero-banner {
     background-image: url(../images/02-hero-bg.jpg);
@@ -57,7 +61,7 @@ nav a {
     align-items: end;
     
 }
-
+  /* hero banner properties for quote  */
 .hero-banner h2 {
     background-color: rgba(110, 207, 255, 0.7);
     margin: 0px 100px 10px 0px;
@@ -66,6 +70,7 @@ nav a {
     z-index: 100;
 }
 
+/* hero banner properties for quote author  */
 .hero-banner p {
     display: flex;
     position: relative;
@@ -76,7 +81,7 @@ nav a {
     font-style: oblique;
     color: var(--gray);
 }
-
+  /* page wrapper grid for main sections/right and left content */
 .page-wrapper {
     margin: 0px 5%;
     display: grid;
@@ -87,13 +92,14 @@ nav a {
     "work projects"
     "contact links"
 }
-
+  /* about me section desription/right content*/
 #description {
   line-height: 1.5;
   margin: 10px;
   color: var(--dark-blue);
 }
 
+  /*border values for page section - left content*/
 #about,
 #work,
 #contact {
@@ -101,6 +107,7 @@ nav a {
   margin: 10px;
 }
 
+  /*text properties for main section headings/left content */
 .page-section h2 {
     font-size: 40px;
     color: var(--dark-blue);
@@ -109,11 +116,12 @@ nav a {
     text-align: right;
 
 }
-
+  /*right content padding*/
 .page-content {
     padding: 15px;
 }
 
+  /*right content, projects grid*/
 .work-content {
     display: grid;
     grid-template-rows: 3fr 1fr 1fr;
@@ -124,7 +132,7 @@ nav a {
     "portfolio-d portfolio-e"
 
 }
-
+  /* right content, headings for every projekt*/
 .heading {
     background-color: var(--dark-blue);
     padding: 19px;
@@ -134,6 +142,7 @@ nav a {
     font-size: 18px;
 }
 
+  /*projects properties*/
 .projects {
     padding: auto;
     margin: 5px;
@@ -143,17 +152,17 @@ nav a {
     flex-wrap: wrap;
     align-content: flex-end;
 }
-
+  /* projects highlights*/
 .projects:hover {
     opacity: 0.7;
 }
 
+  /* every project img and grid area*/
 #portfolio-a {
     grid-area: portfolio-a;
     background-image: url("../images/02-portfolio-1.jpg");
-  
-  
   }
+
   #portfolio-b {
     grid-area: portfolio-b;
     background-image: url("../images/02-portfolio-2.jpg");
@@ -174,6 +183,7 @@ nav a {
     background-image: url("../images/02-run-buddy.jpg");
   }
 
+  /*contact me right content links*/
 #links {
     display: flex;
     justify-content: space-around;
@@ -181,6 +191,7 @@ nav a {
     
 }
 
+  /*media query for max width 800px */
 @media only screen and (max-width: 800px) {
   
   .hero-banner p {
@@ -212,7 +223,8 @@ nav a {
    }
    
 }
-   
+
+   /*media query for max width 700px */
 @media only screen and (max-width: 700px) {
   
   header h1 {
@@ -231,6 +243,7 @@ nav a {
   }
 }
 
+  /*media query for max width 600px */
 @media only screen and (max-width: 600px) {
   
   header h1 {
