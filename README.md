@@ -16,7 +16,7 @@ Link to website [PORTFOLIO]()
 Webpage was created as a sample for professional portfolio.
 In the work section there are placeholders for links to deployed application.
 
-![alt text](starter/images/portfolio-pro.jpg)
+![alt text](assets/images/portfolio-pro.jpg)
 
 
 ## Credits
